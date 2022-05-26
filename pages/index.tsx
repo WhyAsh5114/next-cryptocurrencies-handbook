@@ -1,22 +1,23 @@
-import { Center, Title, TextInput } from "@mantine/core";
+import { Title, TextInput } from "@mantine/core";
+import { Search } from "tabler-icons-react";
 
 export default function Home() {
     return (<>
-        <Center>
+        <div className="grid place-items-center h-full my-10 gap-y-52">
             <Title
                 order={1}
                 style={{ paddingTop: 25 }}
             >
                 Token Viewer App
             </Title>
-        </Center>
 
-        <div>
             <TextInput
-                placeholder="USDC"
-                label="Search Token"
-                radius="xl"
-                size="xl"
+                label="Search token"
+                radius="sm"
+                size="lg"
+                type="search"
+                icon={<Search size={25}/>}
+                className="w-1/3"
             />
         </div>
     </>);
