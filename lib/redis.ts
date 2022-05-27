@@ -24,6 +24,7 @@ let schema = new Schema(
         token_address: {type: 'text'},
         logo: {type: 'text'},
         description: {type: 'text'},
+        tags: {type: 'string[]'}
     },
     {
         dataStructure: 'JSON',
@@ -38,7 +39,9 @@ export async function createIndex() {
 
 export async function searchTokens(q: string) {
     await connect();
-    q = q + "*";    // so the query can also search partial words
+    
+    // So the query can also search partial words
+    q += q.charAt(q.length - 1) !== " " ? "*" : "";
     const repository = client.fetchRepository(schema);
     const tokens = await repository.search()
         .where('name').matches(q)
@@ -47,4 +50,13 @@ export async function searchTokens(q: string) {
         .returnAll();
 
     return tokens;
+}
+
+export async function getToken(q: string) {
+    await connect();
+    const repository = client.fetchRepository(schema);
+    const token = await repository.search()
+        .where('name').eq(q)
+        .returnAll()
+    return token[0];
 }
