@@ -8,7 +8,7 @@ export default function Home() {
                 order={1}
                 style={{ paddingTop: 25, color: "white" }}
             >
-                Token Viewer App
+                DeFi Handbook
             </Title>
 
             <Text 
@@ -18,10 +18,12 @@ export default function Home() {
                 size="xl"
                 weight={700}
             >
-                Get token info on various blockchains from one app
+                Learn about various commonly used cryptos and tokens
             </Text>
 
-            <TokenForm />
+            <div className="w-5/6 md:w-3/4 lg:w-1/2">
+                <TokenForm />
+            </div>
         </div>
     </>);
 }
