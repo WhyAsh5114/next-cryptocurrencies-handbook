@@ -4,7 +4,6 @@ const client = new Client();
 
 async function connect() {
     if (!client.isOpen()) {
-        console.log(process.env.REDIS_URL);
         await client.open(process.env.REDIS_URL);
     }
 }
@@ -39,7 +38,7 @@ export async function createIndex() {
 
 export async function searchTokens(q: string) {
     await connect();
-    q = q + "*";
+    q = q + "*";    // so the query can also search partial words
     const repository = client.fetchRepository(schema);
     const tokens = await repository.search()
         .where('name').matches(q)

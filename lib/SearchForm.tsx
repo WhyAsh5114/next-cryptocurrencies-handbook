@@ -17,12 +17,10 @@ export default function TokenForm () {
 
     const search = async (event: any) => {
         const q = event.target.value;
-        console.log(q);
         if (q.length > 2) {
             const params = new URLSearchParams({ q });
             const res = await fetch('/api/search?' + params);
             const result = await res.json();
-            console.log(result);
             setHits(result.tokens);
         }
     }
