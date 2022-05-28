@@ -1,28 +1,26 @@
 import { useState } from "react";
-import { Button, Image, List, Loader, Text, TextInput, Title } from "@mantine/core";
+import { Image, List, Loader, Text, TextInput, Title } from "@mantine/core";
 import { Search } from "tabler-icons-react";
-import { Entity } from "redis-om";
 import Link from "next/link";
+import search from "./database";
 
-class Token extends Entity {}
 interface Token {
     name: string;
     abbreviation: string;
     token_address: string;
     logo: string;
     description: string;
+    tags: string[];
 }
 
 export default function TokenForm () {
     const [hits, setHits] = useState<Token[]>([]);
 
-    const search = async (event: any) => {
+    const getTokens = async (event: any) => {
         const q = event.target.value;
         if (q.length > 2) {
-            const params = new URLSearchParams({ q });
-            const res = await fetch('/api/search?' + params);
-            const result = await res.json();
-            setHits(result.tokens);
+            const results = search(q);
+            setHits(results);
         } else {
             setHits([]);
         }
@@ -36,12 +34,12 @@ export default function TokenForm () {
                 size="lg"
                 type="search"
                 icon={<Search size={25}/>}
-                onChange={search}
+                onChange={getTokens}
             />
 
             <List spacing={"sm"} className="mt-5">
                 {hits.length > 0 ? hits.map((hit: Token) => (
-                    <List.Item key={hit.entityId} className="bg-zinc-800 py-3 rounded-md hover:bg-zinc-600">
+                    <List.Item key={hit.abbreviation} className="bg-zinc-800 py-3 rounded-md hover:bg-zinc-600">
                         <Link href={"/tokens/" + hit.name}>
                             <div className="grid grid-cols-2">
                                 <Image

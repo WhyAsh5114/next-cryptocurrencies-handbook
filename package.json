@@ -13,13 +13,10 @@
     "@mantine/hooks": "^4.2.6",
     "@mantine/next": "^4.2.6",
     "@types/react-dom": "^18.0.5",
-    "net": "^1.0.2",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "redis-om": "^0.3.3",
-    "tabler-icons-react": "^1.48.0",
-    "tls": "^0.0.1"
+    "tabler-icons-react": "^1.48.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",

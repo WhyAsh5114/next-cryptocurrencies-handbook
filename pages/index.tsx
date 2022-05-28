@@ -1,4 +1,4 @@
-import { Title, Text, Image, Card } from "@mantine/core";
+import { Title, Text } from "@mantine/core";
 import TokenForm from "../lib/SearchForm";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
                 size="xl"
                 weight={700}
             >
-                Learn about various commonly used cryptos and tokens
+                Learn about various DeFi protocols and tokens
             </Text>
 
             <div className="w-5/6 md:w-3/4 lg:w-1/2">
