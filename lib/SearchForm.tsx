@@ -39,7 +39,7 @@ export default function TokenForm () {
 
             <List spacing={"sm"} className="mt-5">
                 {hits.length > 0 ? hits.map((hit: Token) => (
-                    <List.Item key={hit.abbreviation} className="bg-zinc-800 py-3 rounded-md hover:bg-zinc-600">
+                    <List.Item key={hit.abbreviation} className="bg-zinc-800 py-3 rounded-md hover:bg-zinc-700 hover:cursor-pointer transition-colors">
                         <Link href={"/tokens/" + hit.name}>
                             <div className="grid grid-cols-2">
                                 <Image
