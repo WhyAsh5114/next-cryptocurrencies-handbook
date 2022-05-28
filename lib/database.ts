@@ -5,113 +5,127 @@ class Token {
     logo: string;
     description: string;
     tags: string[];
+    website: string;
 
-    constructor (name: string, abbreviation: string, token_address: string, logo: string, description: string, tags: string[]) {
+    constructor(name: string, abbreviation: string, token_address: string, logo: string, description: string, tags: string[], website: string) {
         this.name = name;
         this.abbreviation = abbreviation;
         this.token_address = token_address
         this.logo = logo;
         this.description = description;
         this.tags = tags;
+        this.website = website;
     }
 }
 
 const database = {
-    GUSD : new Token(
+    GUSD: new Token(
         "Gemini USD",
         "GUSD",
         "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
         "https://cryptologos.cc/logos/gemini-dollar-gusd-logo.png?v=022",
         "",
-        ["Stablecoin", "Multi-chain DeFi"]
+        ["Stablecoin", "Multi-chain DeFi"],
+        ""
     ),
-    DAI : new Token(
+    DAI: new Token(
         "Dai Stablecoin",
         "DAI",
         "0x6B175474E89094C44Da98b954EedeAC495271d0F",
         "https://cryptologos.cc/logos/multi-collateral-dai-dai-logo.png?v=022",
         "",
-        ["Stablecoin", "Multi-chain DeFi"]
+        ["Stablecoin", "Multi-chain DeFi"],
+        ""
     ),
-    BUSD : new Token(
+    BUSD: new Token(
         "Binance USD",
         "BUSD",
         "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
         "https://cryptologos.cc/logos/binance-usd-busd-logo.png?v=022",
         "",
-        ["Stablecoin", "Multi-chain DeFi"]
+        ["Stablecoin", "Multi-chain DeFi"],
+        ""
     ),
-    USDT : new Token(
+    USDT: new Token(
         "USD Tether",
         "USDT",
         "0xdAC17F958D2ee523a2206206994597C13D831ec7",
         "https://cryptologos.cc/logos/tether-usdt-logo.png?v=022",
         "",
-        ["Stablecoin", "Multi-chain DeFi"]
+        ["Stablecoin", "Multi-chain DeFi"],
+        ""
     ),
-    USDC : new Token(
+    USDC: new Token(
         "USD Coinbase",
         "USDC",
         "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
         "https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=022",
         "",
-        ["Stablecoin", "Multi-chain DeFi"]
+        ["Stablecoin", "Multi-chain DeFi"],
+        ""
     ),
-    ETH : new Token(
+    ETH: new Token(
         "Ethereum",
         "ETH",
         "",
         "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022",
         "",
-        ["Blockchain", "DeFi"]
+        ["Blockchain", "DeFi"],
+        ""
     ),
-    SOL : new Token(
+    SOL: new Token(
         "Solana",
         "SOL",
         "",
         "https://cryptologos.cc/logos/solana-sol-logo.png?v=022",
         "",
-        ["Blockchain", "DeFi"]
+        ["Blockchain", "DeFi"],
+        ""
     ),
-    AVAX : new Token(
+    AVAX: new Token(
         "Avalanche",
         "AVAX",
         "",
         "https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022",
         "",
-        ["Blockchain", "DeFi"]
+        ["Blockchain", "DeFi"],
+        ""
     ),
-    ADA : new Token(
+    ADA: new Token(
         "Cardano",
         "ADA",
         "",
         "https://cryptologos.cc/logos/cardano-ada-logo.png?v=022",
         "",
-        ["Blockchain"]
+        ["Blockchain"],
+        ""
     ),
-    MATIC : new Token(
+    MATIC: new Token(
         "Polygon",
         "MATIC",
         "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
         "https://cryptologos.cc/logos/polygon-matic-logo.png?v=022",
-        "",
-        ["Blockchain", "DeFi", "Ethereum Layer 2"]
+        "Polygon was originally a layer 2 solution to Ethereum, i.e. it was an alternate blockchain where we could perform many transactions with low gas fees, but eventually it grew an ecosystem of Dapps on its own and is now filled with tons of opportunities. Transactions on Polygon have a fee of less than a dollar, therefore we can move our funds around as much as we need without losing money to gas fees. Many big Dapps and DAOs have released a Polygon platform like Curve, Aave and Balancer.",
+        ["Blockchain", "DeFi", "Ethereum Layer 2"],
+        "https://polygon.technology/"
     ),
-    BTC : new Token(
+    BTC: new Token(
         "Bitcoin",
         "BTC",
         "",
         "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022",
         "",
-        ["Blockchain", "Bitcoin"]
+        ["Blockchain", "Bitcoin"],
+        ""
     ),
-    UNI : new Token(
+    UNI: new Token(
         "Uniswap",
         "UNI",
         "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
         "https://cryptologos.cc/logos/uniswap-uni-logo.png?v=022",
         "",
-        ["Ethereum DeFi", "Liquidity Protocol"]
+        ["Ethereum DeFi", "Liquidity Protocol"],
+        ""
     )
 }
 
