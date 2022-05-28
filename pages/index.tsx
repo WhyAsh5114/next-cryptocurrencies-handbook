@@ -8,7 +8,7 @@ export default function Home() {
                 order={1}
                 style={{ paddingTop: 25, color: "white" }}
             >
-                DeFi Handbook
+                Cryptocurrencies Handbook
             </Title>
 
             <Text 
@@ -18,7 +18,7 @@ export default function Home() {
                 size="xl"
                 weight={700}
             >
-                Learn about various DeFi protocols and tokens
+                Learn about various cryptocurrencies and tokens
             </Text>
 
             <div className="w-5/6 md:w-3/4 lg:w-1/2">

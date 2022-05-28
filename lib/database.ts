@@ -76,29 +76,11 @@ const database = {
     SOL: new Token(
         "Solana",
         "SOL",
-        "Solana is a decentralized blockchain built to enable scalable, user-friendly apps for the world. It's also referred to as the 3rd generation of blockchain as its extremely fast and even cheaper than Polygon MATIC, its based on the consensus mechanism of PoH (Proof of History) which is faster and cheaper than PoW (Proof of Work). Solana also has its drawbacks, its not as decentralized as something like Ethereum and has had some shutdowns in the past. It's lack of nodes is... concerning to say the least.",
-        "https://cryptologos.cc/logos/solana-sol-logo.png?v=022",
         "",
+        "https://cryptologos.cc/logos/solana-sol-logo.png?v=022",
+        "Solana is a decentralized blockchain built to enable scalable, user-friendly apps for the world. It's also referred to as the 3rd generation of blockchain as its extremely fast and even cheaper than Polygon MATIC, its based on the consensus mechanism of PoH (Proof of History) which is faster and cheaper than PoW (Proof of Work). Solana also has its drawbacks, its not as decentralized as something like Ethereum and has had some shutdowns in the past. It's lack of nodes is... concerning to say the least.",
         ["Blockchain", "DeFi"],
         "https://solana.com/"
-    ),
-    AVAX: new Token(
-        "Avalanche",
-        "AVAX",
-        "",
-        "https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022",
-        "",
-        ["Blockchain", "DeFi"],
-        ""
-    ),
-    ADA: new Token(
-        "Cardano",
-        "ADA",
-        "",
-        "https://cryptologos.cc/logos/cardano-ada-logo.png?v=022",
-        "",
-        ["Blockchain"],
-        ""
     ),
     MATIC: new Token(
         "Polygon",
@@ -114,18 +96,9 @@ const database = {
         "BTC",
         "",
         "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022",
-        "",
+        "Bitcoin, the original peer-to-peer cryptocurrency. Its origins lie in a resource paper published under a pseudonym of Satoshi Nakamoto. It was the first ever cryptocurrency, which facilitated trustless transactions amongst peers. Its the 1st generation blockchain and doesn't have smart contracts like Ethereum, the value of Bitcoin exists because Bitcoin is finite in supply and is considered like digital gold.",
         ["Blockchain", "Bitcoin"],
-        ""
-    ),
-    UNI: new Token(
-        "Uniswap",
-        "UNI",
-        "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-        "https://cryptologos.cc/logos/uniswap-uni-logo.png?v=022",
-        "",
-        ["Ethereum DeFi", "Liquidity Protocol"],
-        ""
+        "https://bitcoin.org/en/"
     )
 }
 
