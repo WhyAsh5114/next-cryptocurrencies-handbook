@@ -29,7 +29,7 @@ export default function TokenForm () {
     return (
         <div>
             <TextInput
-                label="Search token"
+                label="Search coin"
                 radius="sm"
                 size="lg"
                 type="search"

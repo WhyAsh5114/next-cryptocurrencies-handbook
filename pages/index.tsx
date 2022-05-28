@@ -7,6 +7,7 @@ export default function Home() {
             <Title
                 order={1}
                 style={{ paddingTop: 25, color: "white" }}
+                className="text-center"
             >
                 Cryptocurrencies Handbook
             </Title>
@@ -17,6 +18,7 @@ export default function Home() {
                 gradient={{ from: 'indigo', to: 'cyan', deg: 0}} 
                 size="xl"
                 weight={700}
+                className="px-4"
             >
                 Learn about various cryptocurrencies and tokens
             </Text>
