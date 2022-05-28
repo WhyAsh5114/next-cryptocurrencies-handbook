@@ -55,6 +55,15 @@ const database = {
         ["Stablecoin", "Multi-chain DeFi"],
         "https://tether.to/en/"
     ),
+    DOGE: new Token(
+        "DogeCoin",
+        "DOGE",
+        "",
+        "https://images.app.goo.gl/WkY9UZ453TCYosfb8",
+        "Dogecoin is a cryptocurrency created by software engineers Billy Markus and Jackson Palmer, who decided to create a payment system as a joke, making fun of the wild speculation in cryptocurrencies at the time. It is considered both the first meme coin, and, more specifically, the first dog coin.",
+        ["Memecoin"],
+        "https://dogecoin.com/"
+    ),
     USDC: new Token(
         "USD Coinbase",
         "USDC",
