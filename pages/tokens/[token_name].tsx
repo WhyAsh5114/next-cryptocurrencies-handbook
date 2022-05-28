@@ -1,11 +1,11 @@
 import { Badge, Image, Text, Title } from '@mantine/core';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
-import search from '../../lib/database'
+import search, { match } from '../../lib/database'
 
 
 export default function TokenInfo({ token_name }: { token_name: string }) {
-    const token = search(token_name)[0];
+    const token = match(token_name);
     const tag_elements = token.tags.map((tag) => 
         <Badge key={tag} size="lg">{tag}</Badge>
     );
