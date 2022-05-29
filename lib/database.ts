@@ -68,7 +68,7 @@ const database = {
         "Polkadot",
         "DOT",
         "",
-        "https://polkadot.network/%2F%2Fmedium.com%2Fpolkadot-network&tbnid=4hWqEGzojHOpnM&vet=12ahUKEwjY3bKl9oP4AhUtyaACHQcwAXQQMygBegUIARDAAg..i&docid=DltYM9KTXdHYKM&w=1200&h=1200&q=polkadot&client=ms-android-oppo-rvo3&ved=2ahUKEwjY3bKl9oP4AhUtyaACHQcwAXQQMygBegUIARDAAg",
+        "https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=022",
         "Polkadot is a blockchain network being built to enable Web 3.0, a decentralized and fair internet where users control their own data and markets prosper from network efficiency and security. Polkadot was founded in 2016 by Gavin Wood, former Co-Founder and CTO of Ethereum.",
         ["Blockchain", "DeFi"],
         "https://polkadot.network"
