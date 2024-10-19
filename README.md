@@ -6,4 +6,4 @@ Has a local database: ```database.ts```, which contains all the tokens and their
 
 I just made this as a pet project to get familiar with NextJS, React and Mantine, if anyone wants to contribute, they could add some Tokens in the database or add some more fields to the Token class, and update all the other tokens accordingly
 
-[Visit here](https://next-token-viewer.vercel.app)
+[Visit here](https://next-cryptocurrencies-handbook.vercel.app)
